@@ -344,13 +344,89 @@ img {
   }
   
   .skill_js {
-    width: 75%;
+    width: 70%;
   }
   
-  .skill_ui {
-    width: 85%;
+  .skill_react {
+    width: 70%;
+  }
+  .skill_redux{
+    width: 65%;
+  }
+  .skill_node{
+    width: 60%;
+  }
+  .skill_express{
+    width: 60%;
+  }
+
+  .about_buttons{
+    display: flex;
+    justify-content: center;
   }
   
+  /* Qualification */
+
+.qualification_tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: (--mb-2);
+}
+.qualification_button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+.qualification_button:hover{
+  color: var(--first-color);
+}
+.qualification_icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+.qualification_data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+.ugdegree{
+  padding-left: 69%;
+}
+
+
+.qualification_title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.qualification_subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+.qualification_calender{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+.qualification_rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+.qualification_line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+.qualification [data-content]{
+  display: none;
+}
+.qualification_active [data-content] {
+  display: block;
+}
   /* WORK */
   
   .work {

@@ -7,7 +7,16 @@
     <title>Karthik Santhamoorthy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Ixnq5OvhNnzyf3zjK");
+   })();
+</script>
 </head>
 <body>
 
@@ -30,7 +39,7 @@
             <a href="#skills" class="nav_link active">Skills</a>
           </li>
           <li class="nav_items">
-            <a href="#work" class="nav_link active">Tools</a>
+            <a href="#education" class="nav_link active">Qualification</a>
           </li>
            <li class="nav_items">
             <a href="#portfolio" class="nav_link active">Projects</a>
@@ -683,15 +692,19 @@
             Hi I'm Karthik a full stack web developer.I'm from Kancheepuram. I did my bachelor degree in commerce department from A.M.Jain college in chennai.
             Currently I'm pursuing my master degree in SRM college.I'm so much interested in coding.
             Right now I'm a qualified and professional web developer. Strong creative and analytical skills.
-        Thankyou, that's  all about me. 
+        Thankyou. 
         </p>
+        <div class="about_buttons">
+          <a download="" href="resume/Resume.pdf" class="button button--flex">Download CV <i class="uil uil-download-alt button_icon"></i>
+             </a>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- SKILLS SECTION -->
     <section class="skills section" id="skills">
-      <h2 class="section-title" data-aos="fade-down">Skills</h2>
+      <h2 class="section-title">Skills</h2>
 
       <div class="skills_container bd_grid">
         <div>
@@ -713,19 +726,19 @@
               <span class="skill_name">Html5</span>
             </div>
 
-            <div><span class="skill_percentage">95%</span></div>
+            <div><span class="skill_htmll">95%</span></div>
 
             <div class="skill_bar skill_html"></div>
           </div>
 
           <!-- SKILLS css -->
-          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+          <div class="skills_data" data-aos="fade-right">
             <div class="skills_name">
               <i class="bx bxl-css3 skill_icon"></i>
               <span class="skill_name">CSS3</span>
             </div>
 
-            <div><span class="skill_percentage">95%</span></div>
+            <div><span class="skill_percentage">85%</span></div>
 
             <div class="skill_bar skill_css"></div>
           </div>
@@ -737,23 +750,12 @@
               <span class="skill_name">Javascript</span>
             </div>
 
-            <div><span class="skill_percentage">75%</span></div>
+            <div><span class="skill_percentage">70%</span></div>
 
             <div class="skill_bar skill_js"></div>
           </div>
 
-          <!-- SKILLS BOOTSTRAP -->
-          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-            <div class="skills_name">
-              <i class="bx bxl-bootstrap"></i>
-              <span class="skill_name">Bootstrap</span>
-            </div>
-
-            <div><span class="skill_percentage">85%</span></div>
-
-            <div class="skill_bar skill_ui"></div>
-          </div>
-
+          
           <!-- SKILLS REACT -->
           <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
             <div class="skills_name">
@@ -761,9 +763,44 @@
               <span class="skill_name">React</span>
             </div>
 
+            <div><span class="skill_percentage">70%</span></div>
+
+            <div class="skill_bar skill_react"></div>
+          </div>
+
+          <!-- SKILLS REDUX -->
+          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+            <div class="skills_name">
+              <i class='bx bxl-redux'></i>
+              <span class="skill_name">Redux</span>
+            </div>
+
             <div><span class="skill_percentage">65%</span></div>
 
-            <div class="skill_bar skill_ui"></div>
+            <div class="skill_bar skill_redux"></div>
+          </div>
+
+          <!-- SKILLS NODE -->
+          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+            <div class="skills_name">
+              <i class='bx bxl-nodejs'></i>
+              <span class="skill_name">Node</span>
+            </div>
+
+            <div><span class="skill_percentage">60%</span></div>
+
+            <div class="skill_bar skill_node"></div>
+          </div>
+
+          <!-- SKILLS EXPRESS -->
+          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+            <div class="skills_name">
+              <span class="skill_name">Express</span>
+            </div>
+
+            <div><span class="skill_percentage">60%</span></div>
+
+            <div class="skill_bar skill_express"></div>
           </div>
         </div>
 
@@ -990,38 +1027,78 @@
       </div>
     </section>
 
-    <!-- TOOL SECTION -->
-    <section class="work section" id="work">
-      <h2 class="section-title" data-aos="fade-down">Tools</h2>
+    <!-- QUALIFICATION -->
 
-      <a
-          href=""
-          class="home_social-icon"
-          data-aos="fade-down"
-          data-aos-delay="350"
-          ><i class="bx bxl-github"></i></a>
+    <section class="qualification section">
+      <h2 class="section-title">Qualification</h2>
 
-          <a
-          href=""
-          class="home_social-icon"
-          data-aos="fade-down"
-          data-aos-delay="350"
-          >
-          <i class="bx bxl-visual-studio"></i></a>
-
-          <a
-          href=""
-          class="home_social-icon"
-          data-aos="fade-down"
-          data-aos-delay="350"
-          ><i class="bx bxl-netlify"></i></a>
-      <div
-        class="work_container bd_grid"
-        data-aos="fade-down"
-        data-aos-delay="250"
-      >      
+      <div class="qualification_container container">
+        <div class="qualification_tabs">
+          <div class="qualification_button button--flex qualification_active" data-target="'#education">
+            <i class="uil uil-graduation-cap qualification_icon"></i>
+            Education
+          </div>
       </div>
+
+      <div class="qualification_sections">
+        <!----------------QUALIFICATION CONTENT 1-->
+        <div class="qualification_content qualification_active" dat-content id="education">
+          <!----------------QUALIFICATION 1-->
+          <div class="qualification_data">
+            <div class="ugdegree">
+              <h3 class="qualification_title">Bachelore of Commerce</h3>
+              <span class="qualification_subtitle">Madras University</span>
+              <div class="qualification_calender">
+                <i class='bx bxs-calendar'></i>
+                2016-2019
+              </div>
+            </div>
+      
+            <div>
+              <span class="qualification_rounder"></span>
+              <span class="qualification_line"></span>
+            </div>
+          </div>
+    
+          <!----------------QUALIFICATION 2-->
+          <div class="qualification_data">
+            <div></div>
+            
+            <div>
+              <span class="qualification_rounder"></span>
+              <span class="qualification_line"></span>
+            </div>
+
+            <div>
+              <h3 class="qualification_title">Master of Business Administration</h3>
+              <span class="qualification_subtitle">SRM University</span>
+              <div class="qualification_calender">
+                <i class='bx bxs-calendar'></i>
+                2021-2023
+              </div>
+            </div>
+          </div>
+          
+           <!-- -- --------------QUALIFICATION 3 -->
+          <div class="qualification_data"> 
+             <div class="ugdegree">
+               <h3 class="qualification_title">Full Stack Developer</h3>
+               <span class="qualification_subtitle">Guvi Institute</span>
+               <div class="qualification_calender">
+                <i class='bx bxs-calendar'></i>
+                 2022-2023
+               </div>
+             </div>
+
+             <div>
+              <span class="qualification_rounder"></span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div> 
     </section>
+
 
 <!-- portfolio section starts  -->
 
@@ -1057,12 +1134,14 @@
           <input
             type="text"
             placeholder="Name"
+            id="name"
             class="control_input"
             data-aos="fade-right"
             data-aos-delay="250"
           />
           <input
-            type="mail"
+            type="email"
+            id="email"
             placeholder="Email"
             class="control_input"
             data-aos="fade-right"
@@ -1071,6 +1150,7 @@
 
           <input
             type="phonenumber"
+            id="phonenumber"
             placeholder="Phone Number"
             class="control_input"
             data-aos="fade-right"
@@ -1090,6 +1170,7 @@
 
           <input
             type="button"
+            onclick="sendMail()"
             value="Get in Touch"
             class="control_button button"
             data-aos="fade-right"
@@ -1150,7 +1231,7 @@
       </div>
 
       <p data-aos="fade-down" data-aos-delay="650">
-        &#169; 2022 copyright all right reserved
+        &#169; 2023 copyright all right reserved
       </p>
     </footer>
   </main>

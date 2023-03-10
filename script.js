@@ -24,3 +24,29 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+function sendMail() {
+      var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phonenumber: document.getElementById("phonenumber").value,
+            text: document.getElementById("text").value,
+      };
+
+
+const serviceID= "service_5yh8hqe";
+const templateID="template_q8qdjto";
+
+emailjs
+.send(serviceID, templateID, params)
+.then((res) => {
+      document.getElementById("name").value ="";
+      document.getElementById("email").value ="";
+      document.getElementById("phonenumber").value ="";
+      document.getElementById("text").value ="";
+      console.log(res);
+      alert("Your message sent successfully");
+})
+.catch((err) => console.log(err));
+}
