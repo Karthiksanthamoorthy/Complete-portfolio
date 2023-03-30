@@ -367,6 +367,8 @@ img {
   
   /* Qualification */
 
+
+
 .qualification_tabs{
   display: flex;
   justify-content: space-evenly;
@@ -428,6 +430,7 @@ img {
   display: block;
 }
   /* WORK */
+
 
   .portfolio_container{
     display: grid;
